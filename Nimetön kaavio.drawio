@@ -1,1 +1,28 @@
-<mxfile host="app.diagrams.net" modified="2022-09-12T07:35:58.922Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" version="20.3.0" etag="itiNEJEBVWgTbMtdmTZG" type="github"><diagram id="77OiAB-3PES3sn5-who1">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-09-12T07:50:37.691Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="dDYeMfS7zIOZimrrBfEQ" version="20.3.0" type="github">
+  <diagram id="77OiAB-3PES3sn5-who1" name="Sivu-1">
+    <mxGraphModel dx="782" dy="468" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="f8OnJNVtR6qTDWvrKz-K-1" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="269" y="50" width="290" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="f8OnJNVtR6qTDWvrKz-K-2" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="269" y="140" width="290" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="f8OnJNVtR6qTDWvrKz-K-13" value="&lt;font style=&quot;font-size: 35px;&quot;&gt;Liike&lt;/font&gt;" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="364" y="65" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="f8OnJNVtR6qTDWvrKz-K-14" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;id (pk) (int)&lt;br&gt;&lt;/span&gt;" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;fontSize=35;" vertex="1" parent="1">
+          <mxGeometry x="359" y="150" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="f8OnJNVtR6qTDWvrKz-K-15" value="pvm (date)" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="359" y="220" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="f8OnJNVtR6qTDWvrKz-K-16" value="liike (int)" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="369" y="270" width="90" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
