@@ -1,7 +1,7 @@
 # IoT
 ## 12.9.2022
 ### Projektisuunnitelma
-#### Peetu Vainio, Joel Utriainen
+#### Peetu Vainio, Joel Utriainen Ja Luca Lappalainen
 Asennettu raspberry pi
 -ohjeet
 1.yhdistä tarvittavat johdot raspberry pi tietokoneeseen (tarvitset näytön)
