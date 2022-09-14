@@ -21,3 +21,4 @@ Testailtu Arduino UNOlla erilaisia asioita
 -4 digit 7 segment LED display
 -Matrix 8x8 LED
 -Yritetty tehdä 4 digit 7 display lämpösensorin kanssa. (ei onnistunut)
+-Mikrofooni
