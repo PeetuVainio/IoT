@@ -22,3 +22,4 @@ Testailtu Arduino UNOlla erilaisia asioita
 -Matrix 8x8 LED
 -Yritetty tehdä 4 digit 7 display lämpösensorin kanssa. (ei onnistunut)
 -Mikrofooni
+-distance sensor (ei toiminut)
