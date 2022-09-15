@@ -28,16 +28,16 @@ Vaihettu Hostname raspberry pi käyttöjärjestelmään
 -Ohjeet: https://www.tomshardware.com/news/raspberry-pi-web-server,40174.html
 Tietokannan ja taulukon tekeminen:
 
-sudo mariadb
-CREATE DATABASE SRYHMA;
-USE SRYHMA
-CREATE TABLE Liike (id int AUTO_INCREMENT NOT NULL PRIMARY KEY, arvo boolean, aika datetime);
+sudo mariadb =avaa tietokanta palvelun
+CREATE DATABASE SRYHMA; =Luo tietokannan
+USE SRYHMA =Avaa tietokannan
+CREATE TABLE Liike (id int AUTO_INCREMENT NOT NULL PRIMARY KEY, arvo boolean, aika datetime); =luo taulukon
+SELECT * FROM Liike; =Näyttää taulukon sisällön
+INSERT INTO Liike (arvo, aika) VALUES (true,now()); =Lisää annetut arvot taulukkoon
 SELECT * FROM Liike;
-INSERT INTO Liike (arvo, aika) VALUES (true,now());
+INSERT INTO Liike (arvo, aika) VALUES (false,now()); =Lisää annetut arvot taulukkoon
 SELECT * FROM Liike;
-INSERT INTO Liike (arvo, aika) VALUES (false,now());
-SELECT * FROM Liike;
-ctrl c
+ctrl c =poistuu tietokannasta
 
 sudo mariadb
 CREATE DATABASE SRYHMA_Peetu;
