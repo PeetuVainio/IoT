@@ -37,7 +37,7 @@ INSERT INTO Liike (arvo, aika) VALUES (true,now()); =Lisää annetut arvot taulu
 SELECT * FROM Liike; =Näyttää taulukon sisällön  
 INSERT INTO Liike (arvo, aika) VALUES (false,now()); =Lisää annetut arvot taulukkoon  
 SELECT * FROM Liike; =Näyttää taulukon sisällön  
-ctrl c =poistuu tietokannasta  
+ctrl c =poistuu tietokanta palvelusta  
 
 sudo mariadb  
 CREATE DATABASE SRYHMA_Peetu;  
