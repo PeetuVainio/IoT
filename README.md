@@ -23,3 +23,6 @@ Testailtu Arduino UNOlla erilaisia asioita
 -Yritetty tehdä 4 digit 7 display lämpösensorin kanssa. (ei onnistunut)
 -Mikrofooni
 -distance sensor (ei toiminut)
+## 15.9.2022
+Vaihettu Hostname raspberry pi käyttöjärjestelmään
+-Ohjeet: https://www.tomshardware.com/news/raspberry-pi-web-server,40174.html
