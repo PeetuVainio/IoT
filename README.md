@@ -27,9 +27,24 @@ Testailtu Arduino UNOlla erilaisia asioita
 Vaihettu Hostname raspberry pi käyttöjärjestelmään
 -Ohjeet: https://www.tomshardware.com/news/raspberry-pi-web-server,40174.html
 Tietokannan tekeminen:
+
 sudo mariadb
 CREATE DATABASE SRYHMA;
 USE SRYHMA
 CREATE TABLE Liike (id int AUTO_INCREMENT NOT NULL PRIMARY KEY, arvo boolean, aika datetime);
 SELECT * FROM Liike;
 INSERT INTO Liike (arvo, aika) VALUES (true,now());
+SELECT * FROM Liike;
+INSERT INTO Liike (arvo, aika) VALUES (false,now());
+SELECT * FROM Liike;
+ctrl c
+
+sudo mariadb
+CREATE DATABASE SRYHMA_Peetu;
+USE SRYHMA_Peetu
+CREATE TABLE Liike_Peetu (id int AUTO_INCREMENT NOT NULL PRIMARY KEY, arvo boolean, aika datetime);
+SELECT * FROM Liike_Peetu;
+INSERT INTO Liike_Peetu (arvo, aika) VALUES (true,now());
+SELECT * FROM Liike_Peetu;
+INSERT INTO Liike_Peetu (arvo, aika) VALUES (false,now());
+SELECT * FROM Liike_Peetu;
