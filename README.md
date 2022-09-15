@@ -26,3 +26,4 @@ Testailtu Arduino UNOlla erilaisia asioita
 ## 15.9.2022
 Vaihettu Hostname raspberry pi käyttöjärjestelmään
 -Ohjeet: https://www.tomshardware.com/news/raspberry-pi-web-server,40174.html
+Tietokannan tekeminen
