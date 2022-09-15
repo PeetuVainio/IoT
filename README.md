@@ -48,3 +48,4 @@ INSERT INTO Liike_Peetu (arvo, aika) VALUES (true,now());
 SELECT * FROM Liike_Peetu;  
 INSERT INTO Liike_Peetu (arvo, aika) VALUES (false,now());  
 SELECT * FROM Liike_Peetu;  
+###### moi
