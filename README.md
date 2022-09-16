@@ -49,3 +49,55 @@ SELECT * FROM Liike_Peetu;
 INSERT INTO Liike_Peetu (arvo, aika) VALUES (false,now());  
 SELECT * FROM Liike_Peetu;  
 ## 16.9.2022
+Testailtu Ardunoa raspberryn kanssa  
+
+lataa arduino IDE Raspiin  
+Terminal:  
+-Sudo apt install arduino =Lataa arduinon  
+-Sudo adduser käyttäjänimi dialout  
+pyserial_kirjasto  
+-pip install pyserial / sudo pip3 install pyserial  
+apt list --installed -> python3-serial   
+
+Testataan toimiiko Arduino IDE oikein:  
+-Simppeli koodi (Serial)  
+-Arduino UNO  
+-Com-port  
+^
+/dev/ttyACM0  
+/dev/ttyUSB0  
+
+Laitettu Arduino ja Python koodit raspiin  
+Arduino:  
+
+void setup() {  
+  // put your setup code here, to run once:  
+Serial.begin(9600);  
+}  
+
+void loop() {  
+  // put your main code here, to run repeatedly:  
+Serial.println("Heippa");  
+delay(100);  
+}  
+
+Python:  
+
+#!/usr/bin/env python3  
+#kirjasto  
+import serial  
+
+if __name__ == '__main__':  
+    #serialin kommunikaatioon alustamisseen kutsutaan muutamilla parametreillä  
+    ser = serial.Serial('/dev/ttyACM0', 9600, timeout=1)  
+    ser.reset_input_buffer()  
+
+    while True:  
+        if ser.in_waiting > 0:  
+            line = ser.readline().decode('utf-8').rstrip()  
+            print(line)  
+
+Välkkyvä LED valo, joka on yhdistetty ardunosta serialiin  
+-Ohjeet: https://forum.arduino.cc/t/blinking-an-led-from-a-raspberry-pi-gpio-signal/695120  
+
+Testattiin Servo moottoria (ei saatu toimimaan)  
