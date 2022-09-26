@@ -102,8 +102,9 @@ Välkkyvä LED valo, joka on yhdistetty ardunosta serialiin
 
 Testattiin Servo moottoria (ei saatu toimimaan)  
 ## 26.9.2022
-### Täydennetty viimeviikon asioita
-#### 19.9.2022
+#### Täydennetty viimeviikon asioita
+### 19.9.2022
+#### koodi, jolla liikeanturi toimii ja vie tiedot taulukkoon
 import time = nykyisen ajan saaminen, ohjelman suorittamisen keskeyttäminen import Pri.GPIO as GPIO = viittaa kaikkiin moduulin toimintoihin lyhyemmällä nimellä GPIO impport mariadb = vaikuttaa mariadb:n mukaan tähän koodiin  
 
 GPIO.setmode(GPIO.BCM) =
@@ -124,10 +125,10 @@ except: = yrittää ensimmäisen jälkeen tehdä tämän
 conn.close() = sulkee kaikki odottavat tai lukemattomat tulokset  
 GPIO.cleanup() = puhdista kaikki käyttämäsi portit  
 
-komennot, jolla saadaan salasana omaan tietokantaan  
+#### komennot, jolla saadaan salasana omaan tietokantaan  
    SET PASSWORD FOR 'root'@localhost=PASSWORD("Jopee31v);  = laittaa salasanan tietokannalle
    flush privileges; = tyhjentää tai lataa uudelleen erilaisia MariaDB:n käyttämiä sisäisiä välimuistia
-#### 20.9.2022
+### 20.9.2022
 apt-get-update, päivittää kaiken ajantasalle  
 clear,tyhjentää taulukon  
 date, kertoo päivämäärän ja ajan  
@@ -165,15 +166,20 @@ free, hostname-|, näyttää mem:it
 Isusb, näyttää USB- väylistä tietoja  
 UP key,pääsee takasinpäin koodeissa, eli voi käyttää jo käytettyjä koodeja uudelleen  
 vcgencmd measure_temp, kertoo järjestelmän lämpötilan vcgencmd get_mem arm&& vcgencmd get_mem gpu, kertoo gpu:n ja arm:in tilavuuden.  
-#### 21.9.2022
-#### 22.9.2022
-### Tehtävä 1
-A)Miten tietokantapalvelimella?
-SHOW DATABASES;
-B)Miten tietokantataulukko on muodostettu?
-DESCRIBE tbl_name
-### Tehtävä 2
-Loopissa ei kovakoodattua sisältöä, 3kpl esimerkkejä sql stringin muokkaamisesta %, format(), f-string
-### Tehtävä 3
-DHT11 harjoitus
-#### 23.9.2022
+### 21.9.2022
+Tutustuttiin eri KTinker komentoihin pythonilla ja aloitettiin suomenlipun koodin tekemistä  
+#### Esimerkkikoodi
+import tkinter as tk = tunnistaa- tkinterin tk:na ja sitä rataa loputkin = koodit window = tk. Tk() lb=tk.Label(text="real python")= Tekstiksi tulee se, mitä suluissa lukee entry = tk.Entry()  
+name=entry.get() = nimeksi tulee se, minkä kirjoitat = name lb.pack() = mahdollistaa lb:n käytön entry.pack()= mahdollistaa entryn käytön  
+window.mainloop()  
+### 22.9.2022
+#### Tehtävä 1
+A)Miten tietokantapalvelimella?  
+SHOW DATABASES;  
+B)Miten tietokantataulukko on muodostettu?  
+DESCRIBE tbl_name  
+#### Tehtävä 2
+Loopissa ei kovakoodattua sisältöä, 3kpl esimerkkejä sql stringin muokkaamisesta %, format(), f-string  
+#### Tehtävä 3
+DHT11 harjoitus  
+### 23.9.2022
