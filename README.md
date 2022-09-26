@@ -127,7 +127,7 @@ GPIO.cleanup() = puhdista kaikki käyttämäsi portit
 komennot, jolla saadaan salasana omaan tietokantaan  
    SET PASSWORD FOR 'root'@localhost=PASSWORD("Jopee31v);  = laittaa salasanan tietokannalle  
    flush privileges; = tyhjentää tai lataa uudelleen erilaisia MariaDB:n käyttämiä sisäisiä välimuistia  
-#### 20.9.2022 viimeviikon täydennyksiä
+#### 20.9.2022
 apt-get-update, päivittää kaiken ajantasalle  
 clear,tyhjentää taulukon  
 date, kertoo päivämäärän ja ajan  
