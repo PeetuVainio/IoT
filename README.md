@@ -102,6 +102,10 @@ Välkkyvä LED valo, joka on yhdistetty ardunosta serialiin
 
 Testattiin Servo moottoria (ei saatu toimimaan)  
 ## 26.9.2022
+Tehtiin raspin localhost sivua:
+-liitettiin kuva, tekstiä ja linkki  
+-etsittiin hyvä taulukko ja muokattiin sitä  
+-
 #### Täydennetty viimeviikon asioita
 ### 19.9.2022
 #### koodi, jolla liikeanturi toimii ja vie tiedot taulukkoon
