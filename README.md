@@ -166,3 +166,14 @@ Isusb, näyttää USB- väylistä tietoja
 UP key,pääsee takasinpäin koodeissa, eli voi käyttää jo käytettyjä koodeja uudelleen  
 vcgencmd measure_temp, kertoo järjestelmän lämpötilan vcgencmd get_mem arm&& vcgencmd get_mem gpu, kertoo gpu:n ja arm:in tilavuuden.  
 #### 21.9.2022
+#### 22.9.2022
+### Tehtävä 1
+A)Miten tietokantapalvelimella?
+SHOW DATABASES;
+B)Miten tietokantataulukko on muodostettu?
+DESCRIBE tbl_name
+### Tehtävä 2
+Loopissa ei kovakoodattua sisältöä, 3kpl esimerkkejä sql stringin muokkaamisesta %, format(), f-string
+### Tehtävä 3
+DHT11 harjoitus
+#### 23.9.2022
