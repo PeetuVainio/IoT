@@ -101,3 +101,30 @@ Välkkyvä LED valo, joka on yhdistetty ardunosta serialiin
 -Ohjeet: https://forum.arduino.cc/t/blinking-an-led-from-a-raspberry-pi-gpio-signal/695120  
 
 Testattiin Servo moottoria (ei saatu toimimaan)  
+## 26.9.2022
+### Täydennetty viimeviikon asioita
+#### 19.9.2022
+import time = nykyisen ajan saaminen, ohjelman suorittamisen keskeyttäminen import Pri.GPIO as GPIO = viittaa kaikkiin moduulin toimintoihin lyhyemmällä nimellä GPIO impport mariadb = vaikuttaa mariadb:n mukaan tähän koodiin
+
+GPIO.setmode(GPIO.BCM) =
+GPIO.setup(23, GPIO.IN) =
+conn = mariadb.connect(user="root", password="Jopee31v", host="localhost", database="SRYHMA") = kirjautuu valitsemaan tietokantaan cur = conn.cursor() =
+
+try: = yrittää ensimmäiseksi tehdä tämän
+while True: = kun on päällä
+if GPIO.input(23): = jos 23 portissa on anturi
+cur.execute("INSERT INTO Liike(arvo,aika) VALUES (true,now())") = siirtää ja luo tiedot mariedb taulukkoon
+conn.commit() = lähettää COMMIT käskyn Mariadblle nykyisen tapahtuman. print("koodi toimii") = tulostaa sanan sulkeiden sisällä
+time.sleep(5) = pitää niin pitkän tauon kuin numeroita löytyy suluista
+
+     else:  = jos ei pysty suorittamaan  
+        print("ei toimi")  
+        time.sleep(5)  
+except: = yrittää ensimmäisen jälkeen tehdä tämän
+conn.close() = sulkee kaikki odottavat tai lukemattomat tulokset
+GPIO.cleanup() = puhdista kaikki käyttämäsi portit
+
+komennot, jolla saadaan salasana omaan tietokantaan
+   SET PASSWORD FOR 'root'@localhost=PASSWORD("Jopee31v);  = laittaa salasanan tietokannalle  
+   flush privileges; = tyhjentää tai lataa uudelleen erilaisia MariaDB:n käyttämiä sisäisiä välimuistia    
+#### 20.9.2022 viimeviikon täydennyksiä
