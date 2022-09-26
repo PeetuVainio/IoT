@@ -183,3 +183,23 @@ Loopissa ei kovakoodattua sisältöä, 3kpl esimerkkejä sql stringin muokkaamis
 #### Tehtävä 3
 DHT11 harjoitus  
 ### 23.9.2022
+Suunniteltiin käyttöliittymää ja sille tehtiin graafinen ohjelmisto, saatiin myös projekti valmiiksi, joka aloitettiin 21-päivä, ja missä frame koodejen avulla saadaan suomenlippu  
+#### Koodi
+import tkinter as tk  
+
+window = tk.Tk() = luo tyhjän ruudun  
+
+frame123 = tk.Frame(master=window, width=50, height=50, bg="blue") = tekee framen ja sen korkeuden, leveyden ja värin  
+frame123.pack(side=tk.RIGHT) = mahdollistaa framen käytön ja asettelee sen ruutuunsa  
+frame134 = tk.Frame(master=window, width=50, height=50, bg="blue")  
+frame134.pack(side=tk.RIGHT)  
+frame145 = tk.Frame(master=window, width=50, height=50, bg="blue")  
+frame145.pack(side=tk.LEFT)  
+frame156 = tk.Frame(master=window, width=50, height=50, bg="blue")  
+frame156.pack(side=tk.RIGHT)  
+frame167 = tk.Frame(master=window, width=50, height=50 bg="blue")  
+frame167.pack()  
+frame177 = tk.Frame(master=window, width=50, height=50, bg="blue")  
+frame177.pack()  
+frame1 = tk.Frame(master=window, width=50, height=50, bg="blue")  
+frame1.pack()  
