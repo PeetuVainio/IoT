@@ -125,8 +125,8 @@ conn.close() = sulkee kaikki odottavat tai lukemattomat tulokset
 GPIO.cleanup() = puhdista kaikki käyttämäsi portit  
 
 komennot, jolla saadaan salasana omaan tietokantaan  
-   SET PASSWORD FOR 'root'@localhost=PASSWORD("Jopee31v);  = laittaa salasanan tietokannalle  
-   flush privileges; = tyhjentää tai lataa uudelleen erilaisia MariaDB:n käyttämiä sisäisiä välimuistia  
+   SET PASSWORD FOR 'root'@localhost=PASSWORD("Jopee31v);  = laittaa salasanan tietokannalle
+   flush privileges; = tyhjentää tai lataa uudelleen erilaisia MariaDB:n käyttämiä sisäisiä välimuistia
 #### 20.9.2022
 apt-get-update, päivittää kaiken ajantasalle  
 clear,tyhjentää taulukon  
@@ -165,3 +165,4 @@ free, hostname-|, näyttää mem:it
 Isusb, näyttää USB- väylistä tietoja  
 UP key,pääsee takasinpäin koodeissa, eli voi käyttää jo käytettyjä koodeja uudelleen  
 vcgencmd measure_temp, kertoo järjestelmän lämpötilan vcgencmd get_mem arm&& vcgencmd get_mem gpu, kertoo gpu:n ja arm:in tilavuuden.  
+#### 21.9.2022
