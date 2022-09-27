@@ -183,7 +183,40 @@ SHOW DATABASES;
 B)Miten tietokantataulukko on muodostettu?  
 DESCRIBE tbl_name  
 #### Tehtävä 2
-Loopissa ei kovakoodattua sisältöä, 3kpl esimerkkejä sql stringin muokkaamisesta %, format(), f-string  
+Loopissa ei kovakoodattua sisältöä, 3kpl esimerkkejä sql stringin muokkaamisesta %, format() ja f-string  
+ import time
+ import datetime
+ import mariadb
+ import PRi.GPIO as GPIO
+ 
+ InputPin = 23
+ 
+ GPIO.setmode(GPIO.SCM)
+ GPIO.setup(InputPin, GPIO.IN
+ 
+ conn = mariadb.connect(user="root", password="Jopee31v", host="localhost", database="SRYHMA")
+ cur = conn.cursor()
+ waitloop = 5
+ print(datetime. datetime. now(1)
+ 
+ try:
+  while True:
+    sql5tr = "INSERT INTO Liike (arvo, aika) VALUES (5, now())"
+    sql5trPercentage = "INSERT INTO Liike (arvo, aika) VALUES (%s, %s)" %(GPIO.input(InputPin), datetime.datetime.now())
+    sql5trFormat = "INSERT INTO Liike (arvo, aika) VALUES ({},{})" .format(GPIO.input(InputPin),datetime.datetime.now())
+    sql5trF = f"INSERT INTO Liike (arvo, aika) VALUES ({GPIO.input(InputPin)}, now())
+   
+    print("A: ", sql5tr)
+    print("B: ", sql5trPercentage)
+    print("C: ", sql5trFormat)
+    print("D: ", sql5trF)
+   
+    time.sleep(waitloop)
+    cur.execute(sqlStrF)
+    conn.commit()
+except:
+  print("ei toimi")
+  time.sleep(waitloop)
 #### Tehtävä 3
 DHT11 harjoitus  
 ### 23.9.2022
