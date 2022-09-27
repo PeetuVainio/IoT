@@ -245,3 +245,32 @@ frame1.pack()
 Käytiin html anatomiaa
 tehtiin html nettisivu
 #### Koodi
+</DOCTYPE html>
+<html large="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+    <title>Peetun sivusto</title>
+</head>
+<body style="background-color:pink">
+    <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">Ilmaisia VBuckseja</a>
+	<h1>Yleistä sivustosta</h1>
+	öö joo täällä on jotain joo...
+	<p></p>
+    <h3>Asioita joista tykkään</h3>
+    <ul>
+        <li>Pelaaminen</li>
+    </ul>
+    <h3>Pelit joita pelaan(silloin tällöin)</h3>
+    <ol>
+        <li>Sea of Thieves</li>
+        <li>OW</li>
+        <li>Roblox</li>
+        <li>CS:GO</li>
+    </ol>
+    <h4>Pingviini</h4>
+    <img src="downloads/pingviini.jpg"alt=pingviini>
+    <style>* {color: rgba(255, 0, 0, 0.769);}</style>
+
+</body>
+</html>
