@@ -187,7 +187,7 @@ Loopissa ei kovakoodattua sisältöä, 3kpl esimerkkejä sql stringin muokkaamis
 #### Tehtävä 3
 DHT11 harjoitus  
 ### 23.9.2022
-Suunniteltiin käyttöliittymää ja sille tehtiin graafinen ohjelmisto, saatiin myös projekti valmiiksi, joka aloitettiin 21-päivä, ja missä frame koodejen avulla saadaan suomenlippu  
+Suunniteltiin käyttöliittymää ja tehtiin sille graafinen ohjelmisto, saatiin myös projekti valmiiksi, joka aloitettiin 21-päivä, ja missä frame koodien avulla saatiin aikaiseksi suomenlippu  
 #### Koodi
 import tkinter as tk  
 
@@ -201,7 +201,7 @@ frame145 = tk.Frame(master=window, width=50, height=50, bg="blue")
 frame145.pack(side=tk.LEFT)  
 frame156 = tk.Frame(master=window, width=50, height=50, bg="blue")  
 frame156.pack(side=tk.RIGHT)  
-frame167 = tk.Frame(master=window, width=50, height=50 bg="blue")  
+frame167 = tk.Frame(master=window, width=50, height=50, bg="blue")  
 frame167.pack()  
 frame177 = tk.Frame(master=window, width=50, height=50, bg="blue")  
 frame177.pack()  
