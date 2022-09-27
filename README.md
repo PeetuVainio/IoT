@@ -241,3 +241,7 @@ frame177 = tk.Frame(master=window, width=50, height=50, bg="blue")
 frame177.pack()  
 frame1 = tk.Frame(master=window, width=50, height=50, bg="blue")  
 frame1.pack()  
+## 27.9.2022
+Käytiin html anatomiaa
+tehtiin html nettisivu
+#### Koodi
