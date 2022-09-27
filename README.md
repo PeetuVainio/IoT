@@ -217,6 +217,7 @@ Loopissa ei kovakoodattua sisältöä, 3kpl esimerkkejä sql stringin muokkaamis
 except:  
   print("ei toimi")  
   time.sleep(waitloop)  
+  window.mainloop()  
 #### Tehtävä 3
 DHT11 harjoitus  
 ### 23.9.2022
