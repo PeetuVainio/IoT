@@ -252,8 +252,7 @@ tehtiin html nettisivu
 	<meta name="viewport" content="width=device-width">
     <title>Peetun sivusto</title>
 </head>
-<body style="background-color:pink">
-    <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">Ilmaisia VBuckseja</a>
+<body style="background-color:rgb(241, 112, 159)">
 	<h1>Yleistä sivustosta</h1>
 	öö joo täällä on jotain joo...
 	<p></p>
@@ -268,9 +267,16 @@ tehtiin html nettisivu
         <li>Roblox</li>
         <li>CS:GO</li>
     </ol>
-    <h4>Pingviini</h4>
-    <img src="downloads/pingviini.jpg"alt=pingviini>
-    <style>* {color: rgba(255, 0, 0, 0.769);}</style>
+    <img src="downloads/humuhumunukunukuapuaa.jpg"alt=humuhumunukunukuapuaa>
+    <style>* {color: rgba(245, 245, 245, 0.769);}</style>
+    <br>
+    ^humuhumunukunukuapuaa
+    <br>
+    <br>
+    <br>
+    <br>
+    <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">Ilmaisia VBuckseja</a>
 
 </body>
 </html>
+## 28.9.2022
