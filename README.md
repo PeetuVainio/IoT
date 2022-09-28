@@ -246,3 +246,52 @@ Käytiin html anatomiaa
 tehtiin html nettisivua
 ## 28.9.2022
 -jatkettiin eilistä html sivuston tekemistä/muokkaamista
+#### koodi
+</DOCTYPE html>
+<html large="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+    <title>Peetun sivusto</title>
+
+</head>
+<body style="background-color:rgb(241, 112, 159)">
+    <style>* {color: rgba(245, 245, 245, 0.769);}</style>
+
+	<h1>Yleistä sivustosta</h1>
+	öö joo täällä on jotain joo...
+
+    <h3>Asioita joista tykkään</h3>
+    <ul>
+        <li>Pelaaminen</li>
+    </ul>
+
+    <h3>Pelit joita pelaan(aina välillä)</h3>
+    <ol>
+        <li>Sea of Thieves</li>
+        <li>OW</li>
+        <li>Roblox</li>
+        <li>CS:GO</li>
+    </ol>
+
+    <script type="text/javascript">
+        var clicks = 0;
+        function onClick() {
+            clicks += 1;
+            document.getElementById("clicks").innerHTML = clicks;
+        };
+        </script>
+        <button type="button" onClick="onClick()">klikkaa mua</button>
+        <p>Clicks: <a id="clicks">0</a></p>
+    <br>
+
+    <img src="downloads/humuhumunukunukuapuaa.jpg"alt=humuhumunukunukuapuaa>
+    <br>
+    ^humuhumunukunukuapuaa
+    <br>
+    <br>
+    <br>
+    <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">Ilmaisia V-Buckseja</a>
+
+</body>
+</html>
