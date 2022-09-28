@@ -245,38 +245,38 @@ frame1.pack()
 Käytiin html anatomiaa
 tehtiin html nettisivu
 #### Koodi
-</DOCTYPE html>
-<html large="en-US">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-    <title>Peetun sivusto</title>
-</head>
-<body style="background-color:rgb(241, 112, 159)">
-	<h1>Yleistä sivustosta</h1>
-	öö joo täällä on jotain joo...
-	<p></p>
-    <h3>Asioita joista tykkään</h3>
-    <ul>
-        <li>Pelaaminen</li>
-    </ul>
-    <h3>Pelit joita pelaan(silloin tällöin)</h3>
-    <ol>
-        <li>Sea of Thieves</li>
-        <li>OW</li>
-        <li>Roblox</li>
-        <li>CS:GO</li>
-    </ol>
-    <img src="downloads/humuhumunukunukuapuaa.jpg"alt=humuhumunukunukuapuaa>
-    <style>* {color: rgba(245, 245, 245, 0.769);}</style>
-    <br>
-    ^humuhumunukunukuapuaa
-    <br>
-    <br>
-    <br>
-    <br>
-    <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">Ilmaisia VBuckseja</a>
+</DOCTYPE html>  
+<html large="en-US">  
+<head>  
+	<meta charset="utf-8">  
+	<meta name="viewport" content="width=device-width">  
+    <title>Peetun sivusto</title>  
+</head>  
+<body style="background-color:rgb(241, 112, 159)">  
+	<h1>Yleistä sivustosta</h1>  
+	öö joo täällä on jotain joo...  
+	<p></p>  
+    <h3>Asioita joista tykkään</h3>  
+    <ul>  
+        <li>Pelaaminen</li>  
+    </ul>  
+    <h3>Pelit joita pelaan(silloin tällöin)</h3>  
+    <ol>  
+        <li>Sea of Thieves</li>  
+        <li>OW</li>  
+        <li>Roblox</li>  
+        <li>CS:GO</li>  
+    </ol>  
+    <img src="downloads/humuhumunukunukuapuaa.jpg"alt=humuhumunukunukuapuaa>  
+    <style>* {color: rgba(245, 245, 245, 0.769);}</style>  
+    <br>  
+    ^humuhumunukunukuapuaa  
+    <br>  
+    <br>  
+    <br>  
+    <br>  
+    <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">Ilmaisia VBuckseja</a>  
 
-</body>
-</html>
+</body>  
+</html>  
 ## 28.9.2022
