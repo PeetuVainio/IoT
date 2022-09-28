@@ -243,8 +243,6 @@ frame1 = tk.Frame(master=window, width=50, height=50, bg="blue")
 frame1.pack()  
 ## 27.9.2022
 Käytiin html anatomiaa
-tehtiin html nettisivu
-#### Koodi
-
+tehtiin html nettisivua
 ## 28.9.2022
 -jatkettiin eilistä html sivuston tekemistä/muokkaamista
