@@ -247,3 +247,4 @@ tehtiin html nettisivu
 #### Koodi
 
 ## 28.9.2022
+-jatkettiin eilistä html sivuston tekemistä/muokkaamista
