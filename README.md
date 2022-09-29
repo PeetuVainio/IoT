@@ -295,3 +295,5 @@ tehtiin html nettisivua
 
 </body>
 </html>
+## 29.9.2022
+-käytiin läpi mitä kieliä ollaan tähän asti käytetty
