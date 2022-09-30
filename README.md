@@ -304,6 +304,7 @@ tehtiin html nettisivua
 -Linkitettiin meidän php sivut html sivuun   
 -saatiin omista tietokannoista taulukot toimimaan php sivuille  
 #### Omien php sivujen koodi
+
 <!DOCTYPE html>  
 <html>  
       <head>  
@@ -356,6 +357,7 @@ tehtiin html nettisivua
       </body>  
 </html>  
 #### html Koodi
+
 <html>  
       <head>  
             <title>MOI</title>  
