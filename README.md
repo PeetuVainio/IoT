@@ -376,3 +376,8 @@ tehtiin html nettisivua
 </html>  
 
 ## 30.9.2022
+Tehtiin html form, jossa oli täytettävänä:
+-nimi
+-ikä
+-päivämäärä
+-tekstiboksi (max 120 merkkiä)
