@@ -298,10 +298,10 @@ tehtiin html nettisivua
 ## 29.9.2022
 -käytiin läpi mitä kieliä ollaan tähän asti käytetty  
 -koodattiin php:tä  
--Tehtiin PIR liikeanturi toimivaksi  
--Tehtiin index.html sivu  
--Tehtiin meille jokaiselle omat php sivut  
--Linkitettiin meidän php sivut html sivuun  
+-Tehtiin PIR liikeanturi toimivaksi   
+-Tehtiin index.html sivu   
+-Tehtiin meille jokaiselle omat php sivut   
+-Linkitettiin meidän php sivut html sivuun   
 -saatiin omista tietokannoista taulukot toimimaan php sivuille  
 #### Omien php sivujen koodi
 <!DOCTYPE html>  
