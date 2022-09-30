@@ -295,7 +295,9 @@ tehtiin html nettisivua
 
 </body>
 </html>
+
 ## 29.9.2022
+
 -käytiin läpi mitä kieliä ollaan tähän asti käytetty  
 -koodattiin php:tä  
 -Tehtiin PIR liikeanturi toimivaksi   
@@ -303,7 +305,8 @@ tehtiin html nettisivua
 -Tehtiin meille jokaiselle omat php sivut   
 -Linkitettiin meidän php sivut html sivuun   
 -saatiin omista tietokannoista taulukot toimimaan php sivuille  
-#### Omien php sivujen koodi
+
+#### omien php sivujen koodi
 
 <!DOCTYPE html>  
 <html>  
@@ -356,7 +359,8 @@ tehtiin html nettisivua
             </div>  
       </body>  
 </html>  
-#### html Koodi
+
+#### html koodi
 
 <html>  
       <head>  
@@ -370,3 +374,5 @@ tehtiin html nettisivua
             </div>  
       </body>  
 </html>  
+
+## 30.9.2022
