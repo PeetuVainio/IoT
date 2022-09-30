@@ -382,3 +382,38 @@ Tehtiin html form, jossa oli täytettävänä:
 -päivämäärä  
 -tekstiboksi (max 120 merkkiä)  
 -formin nollaus nappi  
+
+#### koodi
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <title>Tärkeä formi</title>  
+
+</head>  
+
+<body style="background-color:rgb(252, 96, 169)">  
+    <style>* {color: rgb(0, 255, 255);}</style>  
+
+<h2>Todella tärkeä formi</h2>  
+
+<form action="/action_page.php">  
+    
+  <label for="fname">Nimi:</label><br>  
+  <input type="text" id="fname" name="fname" value=""><br>  
+
+     Ikä:<br>  
+         <input type="number" min="1" max="100"><br>  
+	
+     Päivämäärä:<br>  
+         <input type="date"><br>  
+
+     max 120 merkkiä:<br>  
+         <input type="text" maxlength="120" required><br>  
+
+  <input type="reset" value="nollaa">  
+  <input type="Submit" value="Lähetä">  
+
+</form>   
+
+</body>  
+</html>  
