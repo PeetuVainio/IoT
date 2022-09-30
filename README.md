@@ -102,18 +102,18 @@ Välkkyvä LED valo, joka on yhdistetty ardunosta serialiin
 
 Testattiin Servo moottoria (ei saatu toimimaan)  
 ## 26.9.2022
-Tehtiin raspin localhost sivua:
+Tehtiin raspin localhost sivua:  
 -liitettiin kuva, tekstiä ja linkki  
 -etsittiin hyvä taulukko ja muokattiin sitä  
--
+
 #### Täydennetty viimeviikon asioita
 ### 19.9.2022
 #### koodi, jolla liikeanturi toimii ja vie tiedot taulukkoon
 import time = nykyisen ajan saaminen, ohjelman suorittamisen keskeyttäminen import Pri.GPIO as GPIO = viittaa kaikkiin moduulin toimintoihin lyhyemmällä nimellä GPIO impport mariadb = vaikuttaa mariadb:n mukaan tähän koodiin  
 
-GPIO.setmode(GPIO.BCM) =
-GPIO.setup(23, GPIO.IN) =
-conn = mariadb.connect(user="root", password="Jopee31v", host="localhost", database="SRYHMA") = kirjautuu valitsemaan tietokantaan cur = conn.cursor() =
+GPIO.setmode(GPIO.BCM) =  
+GPIO.setup(23, GPIO.IN) =  
+conn = mariadb.connect(user="root", password="Jopee31v", host="localhost", database="SRYHMA") = kirjautuu valitsemaan tietokantaan cur = conn.cursor() =  
 
 try: = yrittää ensimmäiseksi tehdä tämän  
 while True: = kun on päällä  
@@ -242,56 +242,56 @@ frame177.pack()
 frame1 = tk.Frame(master=window, width=50, height=50, bg="blue")  
 frame1.pack()  
 ## 27.9.2022
-Käytiin html anatomiaa
-tehtiin html nettisivua
+Käytiin html anatomiaa  
+tehtiin html nettisivua  
 ## 28.9.2022
--jatkettiin eilistä html sivuston tekemistä/muokkaamista
+-jatkettiin eilistä html sivuston tekemistä/muokkaamista  
 #### koodi
-</DOCTYPE html>
-<html large="en-US">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-    <title>Peetun sivusto</title>
+</DOCTYPE html>  
+<html large="en-US">  
+<head>  
+	<meta charset="utf-8">  
+	<meta name="viewport" content="width=device-width">  
+    <title>Peetun sivusto</title>  
 
-</head>
-<body style="background-color:rgb(241, 112, 159)">
-    <style>* {color: rgba(245, 245, 245, 0.769);}</style>
+</head>  
+<body style="background-color:rgb(241, 112, 159)">  
+    <style>* {color: rgba(245, 245, 245, 0.769);}</style>  
 
-	<h1>Yleistä sivustosta</h1>
-	öö joo täällä on jotain joo...
+	<h1>Yleistä sivustosta</h1>  
+	öö joo täällä on jotain joo...  
 
-    <h3>Asioita joista tykkään</h3>
-    <ul>
-        <li>Pelaaminen</li>
-    </ul>
+    <h3>Asioita joista tykkään</h3>  
+    <ul>  
+        <li>Pelaaminen</li>  
+    </ul>  
 
-    <h3>Pelit joita pelaan(aina välillä)</h3>
-    <ol>
-        <li>Sea of Thieves</li>
-        <li>OW</li>
-        <li>Roblox</li>
-        <li>CS:GO</li>
-    </ol>
+    <h3>Pelit joita pelaan(aina välillä)</h3>  
+    <ol>  
+        <li>Sea of Thieves</li>  
+        <li>OW</li>  
+        <li>Roblox</li>  
+        <li>CS:GO</li>  
+    </ol>  
 
-    <script type="text/javascript">
-        var clicks = 0;
-        function onClick() {
-            clicks += 1;
-            document.getElementById("clicks").innerHTML = clicks;
-        };
-        </script>
-        <button type="button" onClick="onClick()">klikkaa mua</button>
-        <p>Clicks: <a id="clicks">0</a></p>
-    <br>
+    <script type="text/javascript">  
+        var clicks = 0;  
+        function onClick() {  
+            clicks += 1;  
+            document.getElementById("clicks").innerHTML = clicks;  
+        };  
+        </script>  
+        <button type="button" onClick="onClick()">klikkaa mua</button>  
+        <p>Clicks: <a id="clicks">0</a></p>  
+    <br>  
 
-    <img src="downloads/humuhumunukunukuapuaa.jpg"alt=humuhumunukunukuapuaa>
-    <br>
-    ^humuhumunukunukuapuaa
-    <br>
-    <br>
-    <br>
-    <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">Ilmaisia V-Buckseja</a>
+    <img src="downloads/humuhumunukunukuapuaa.jpg"alt=humuhumunukunukuapuaa>  
+    <br>  
+    ^humuhumunukunukuapuaa  
+    <br>  
+    <br>  
+    <br>  
+    <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">Ilmaisia V-Buckseja</a>  
 
 </body>
 </html>
@@ -376,8 +376,9 @@ tehtiin html nettisivua
 </html>  
 
 ## 30.9.2022
-Tehtiin html form, jossa oli täytettävänä:
--nimi
--ikä
--päivämäärä
--tekstiboksi (max 120 merkkiä)
+Tehtiin html form, jossa oli täytettävänä:  
+-nimi  
+-ikä  
+-päivämäärä  
+-tekstiboksi (max 120 merkkiä)  
+-formin nollaus nappi  
