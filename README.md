@@ -417,3 +417,49 @@ Tehtiin html form, jossa oli täytettävänä:
 
 </body>  
 </html>  
+
+## 3.10.2022
+Tein google chartsia  
+
+#### Koodi
+
+<html>  
+  <head>  
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>  
+    <script type="text/javascript">  
+
+      google.charts.load('current', {'packages':['corechart']});  
+
+      google.charts.setOnLoadCallback(drawChart);  
+
+      function drawChart() {  
+
+        var data = new google.visualization.DataTable();  
+        data.addColumn('string', 'Topping');  
+        data.addColumn('number', 'Slices');  
+        data.addRows([  
+          ['Maanantai', 8],  
+          ['Tiistai', 8],  
+          ['Keskiviikko', 10],  
+          ['Torstai', 13],  
+          ['Perjantai', 14],  
+          ['Lauantai', 12],  
+          ['Sunnuntai', 10]  
+          
+        ]);  
+
+        var options = {'title':'Lämpötilat tällä viikolla asteina',  
+                       'width':400,  
+                       'height':300};  
+
+        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));  
+        chart.draw(data, options);  
+      }  
+    </script>  
+  </head>  
+
+  <body>  
+    <div id="chart_div"></div>  
+  </body>  
+</html>  
