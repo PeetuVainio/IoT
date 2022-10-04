@@ -465,6 +465,10 @@ Tein google chartsia
 </html>  
 
 ## 4.10.2022
+Tein google chartsia
+
+#### koodi
+
 
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>  
 <script type="text/javascript">  
