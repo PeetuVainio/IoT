@@ -466,9 +466,7 @@ Tein google chartsia
 
 ## 4.10.2022
 Tein google chartsia
-
 #### koodi
-
 
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>  
 <script type="text/javascript">  
@@ -495,14 +493,15 @@ Tein google chartsia
     2]);  
 
     var options = {  
-      title: "Tämän viikon lämpötilat asteina",  
-      width: 800,  
-      height: 400,  
-      bar: {groupWidth: "95%"},  
-      legend: { position: "none" },  
+   				  title: "Tämän viikon lämpötilat asteina",  
+    				  width: 800,  
+    				  height: 400,  
+    				  bar: {groupWidth: "95%"},  
+    				  legend: { position: "none" },  
     };  
     var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));  
     chart.draw(view, options);  
 }  
 </script>  
 <div id="columnchart_values" style="width: 900px; height: 300px;"></div>  
+
