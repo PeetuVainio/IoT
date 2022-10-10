@@ -506,9 +506,19 @@ Tein google chartsia
 <div id="columnchart_values" style="width: 900px; height: 300px;"></div>  
 
 ## 5.10.2022
-Yritin saada yhdistettyä Azuren tietokantaan (en saanut toimimaan)
+Yritin saada yhdistettyä Azuren tietokantaan (en saanut toimimaan)  
 
 ## 10.10.2022
-### Tein viimeviikon juttuja
-#### 3.10.2022
-Asensin MySQL Workbenchin
+#### Tein viimeviikon juttuja
+### 3.10.2022
+Asensin MySQL Workbenchin  
+loin tietokannan  
+
+CREATE DATABASE SRYHMA; =Luo tietokannan  
+USE SRYHMA =Avaa tietokannan  
+CREATE TABLE Peetu (id int AUTO_INCREMENT NOT NULL PRIMARY KEY, arvo boolean, aika datetime);  
+SELECT * FROM Peetu;  
+INSERT INTO Peetu (arvo, aika) VALUES (true,now());  
+SELECT * FROM Peetu;  
+INSERT INTO Peetu (arvo, aika) VALUES (false,now());  
+SELECT * FROM Peetu;  
