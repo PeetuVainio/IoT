@@ -510,9 +510,9 @@ Yritin saada yhdistettyä Azuren tietokantaan (en saanut toimimaan)
 
 ## 10.10.2022
 #### Tein viimeviikon juttuja
-### 3.10.2022
-Asensin MySQL Workbenchin  
-loin tietokannan  
+
+-Asensin MySQL Workbenchin  
+-loin tietokannan  
 
 CREATE DATABASE SRYHMA; =Luo tietokannan  
 USE SRYHMA =Avaa tietokannan  
@@ -522,3 +522,89 @@ INSERT INTO Peetu (arvo, aika) VALUES (true,now());
 SELECT * FROM Peetu;  
 INSERT INTO Peetu (arvo, aika) VALUES (false,now());  
 SELECT * FROM Peetu;  
+
+-Tein paikallisen PHP-Palvelimen  
+-Ongelmanratkaisua ja tiedonhankintaa  
+-keskustelupalsta  
+
+index2.php  
+#### koodi
+
+<?php  
+
+$servername ="hyvis.mysql.database.azure.com";  
+$username ="db_projekti";  
+$password ="Sivuh2022";  
+$dbname ="Peetu";  
+
+?>  
+
+index.php  
+#### koodi
+
+<html>  
+    <body>  
+        <form action="handle.php" method="post">  
+            Nimimerkki: <input type="text" name="name"><br>  
+            Viesti: <textarea name="viesti"></textarea><br>  
+            <input type="submit">  
+        </form>  
+    </body>  
+</html>  
+
+handle.php  
+#### koodi
+
+<?php  
+include "index2.php";  
+
+$conn = new mysqli($servername, $username, $password, $dbname);  
+if ($conn->connect_error){  
+die("connection failed: " . $conn->connect_error);  
+}  
+
+$name = $_POST['name'];  
+$viesti = $_POST['viesti'];  
+$sql = "INSERT INTO Keskustelu (nimi, viesti) VALUES ('".$name."', '".$viesti."')";  
+
+
+if ($conn->query($sql) === TRUE) {  
+    echo "New record created successfully";  
+} else {  
+    echo "Error: " . $sql . "<br>" . $conn->error;  
+    die();  
+}  
+
+$conn->close();  
+header("location: index.php");  
+die();  
+?>  
+
+.php  
+#### koodi
+
+<?php  
+include "index2.php";  
+
+            $conn = new mysqli($servername, $username, $password, $dbname);  
+            if ($conn->connect_error){  
+            die("connection failed: " . $conn->connect_error);  
+            }  
+            $sql = "SELECT * FROM Keskustelu";  
+            $result = $conn->query($sql);  
+
+            if ($result->num_rows > 0) {}  
+            while($row = $result->fetch_assoc()){  
+                echo $row["id"]." arvo: ".$row["arvo"]."<br>";  
+            }  
+            $conn->close();  
+            ?>    
+<html>  
+    <body>  
+        <form action="handle.php" method="post">  
+            Nimimerkki: <input type="text" name="name"><br>  
+            Viesti: <textarea name="viesti"></textarea><br>  
+            <input type="submit">  
+        </form>  
+    </body>  
+</html>  
