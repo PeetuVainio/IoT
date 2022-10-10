@@ -506,4 +506,9 @@ Tein google chartsia
 <div id="columnchart_values" style="width: 900px; height: 300px;"></div>  
 
 ## 5.10.2022
-Yritin saada yhdistettyä omalta koneelta azuren avulla yhteyden tietokantaan (en saanut toimimaan)
+Yritin saada yhdistettyä Azuren tietokantaan (en saanut toimimaan)
+
+## 10.10.2022
+### Tein viimeviikon juttuja
+#### 3.10.2022
+Asensin MySQL Workbenchin
