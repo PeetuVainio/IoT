@@ -610,3 +610,6 @@ include "index2.php";
 </html>  
 
 ## 11.10.2022
+-tein html sivua jossa käytin css
+
+#### koodi
