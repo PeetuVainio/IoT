@@ -611,5 +611,8 @@ include "index2.php";
 
 ## 11.10.2022
 -tein html sivua jossa käytin css
-
-#### koodi
+-laitettiin MySQL Workbenchiin uusi taulukko
+tee tässä järjestyksessä:
+Use peetu
+create database keskustelu
+create table keskustelu (id int primary key auto_increment. nimi varchar(255), viesti varchar(1000))
