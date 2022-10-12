@@ -101,10 +101,6 @@ Välkkyvä LED valo, joka on yhdistetty ardunosta serialiin
 -Ohjeet: https://forum.arduino.cc/t/blinking-an-led-from-a-raspberry-pi-gpio-signal/695120  
 
 Testattiin Servo moottoria (ei saatu toimimaan)  
-## 26.9.2022
-Tehtiin raspin localhost sivua:  
--liitettiin kuva, tekstiä ja linkki  
--etsittiin hyvä taulukko ja muokattiin sitä  
 
 #### Täydennetty viimeviikon asioita
 ### 19.9.2022
@@ -241,6 +237,11 @@ frame177 = tk.Frame(master=window, width=50, height=50, bg="blue")
 frame177.pack()  
 frame1 = tk.Frame(master=window, width=50, height=50, bg="blue")  
 frame1.pack()  
+
+## 26.9.2022
+Tehtiin raspin localhost sivua:  
+-liitettiin kuva, tekstiä ja linkki  
+-etsittiin hyvä taulukko ja muokattiin sitä  
 ## 27.9.2022
 Käytiin html anatomiaa  
 tehtiin html nettisivua  
