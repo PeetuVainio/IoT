@@ -611,9 +611,120 @@ include "index2.php";
 </html>  
 
 ## 11.10.2022
--tein html sivua jossa käytin css
--laitettiin MySQL Workbenchiin uusi taulukko
-tee tässä järjestyksessä:
-Use peetu
-create database keskustelu
-create table keskustelu (id int primary key auto_increment. nimi varchar(255), viesti varchar(1000))
+-tein html sivua jossa käytin css  
+-laitettiin MySQL Workbenchiin uusi taulukko  
+tee tässä järjestyksessä:  
+Use peetu  
+create database keskustelu  
+create table keskustelu (id int primary key auto_increment. nimi varchar(255), viesti varchar(1000))  
+## 12.10.2022  
+sain tehtyä keskustelu lomakkeen loppuun  
+#### koodit
+### config.php  
+
+<?php  
+
+$servername ="hyvis.mysql.database.azure.com";  
+$username ="db_projekti";  
+$password ="Sivyh2022";  
+$dbname ="Peetu";  
+
+?>  
+
+### database.php  
+
+<?php  
+$con=mysqli_connect("hyvis.mysql.database.azure.com","db_projekti","Sivyh2022","Peetu");  
+// Check connection  
+if (mysqli_connect_errno())  
+{  
+echo "Failed to connect to MySQL: " . mysqli_connect_error();  
+}  
+
+$result = mysqli_query($con,"SELECT * FROM keskustelu");  
+
+echo "<table border='1'>  
+<tr>  
+<th>nimimerkki</th>  
+<th>viesti</th>  
+</tr>";  
+
+while($row = mysqli_fetch_array($result))  
+{  
+echo "<tr>";  
+echo "<td>" . $row['nimi'] . "</td>";  
+echo "<td>" . $row['viesti'] . "</td>";  
+echo "</tr>";  
+}  
+echo "</table>";  
+
+mysqli_close($con);  
+?>  
+
+### handle.php
+
+<?php  
+include "config.php";  
+
+$conn = new mysqli($servername, $username, $password, $dbname);  
+if ($conn->connect_error){  
+die("connection failed: " . $conn->connect_error);  
+}  
+
+$name = $_POST['name'];  
+$viesti = $_POST['viesti'];  
+$stmt = $conn->prepare('INSERT INTO Keskustelu (nimi, viesti) VALUES (?, ?)');  
+$stmt->bind_param('ss', $name, $viesti);  
+
+$stmt->execute();  
+
+$conn->close();  
+ 
+header("location: index.php");  
+die();  
+?>  
+
+### index.php  
+
+<?php  
+include "database.php";  
+?>  
+<html>  
+    <body>  
+        <form action="handle.php" method="post">  
+            Nimimerkki: <input type="text" name="name"><br>  
+            Viesti: <textarea name="viesti"></textarea><br>  
+            <input type="submit">  
+        </form>  
+    </body>  
+</html>  
+
+### index2.php  
+
+<?php  
+include "config.php";  
+
+            $conn = new mysqli($servername, $username, $password, $dbname);  
+            if ($conn->connect_error) {  
+                die("connection failed: " . $conn->connect_error);  
+            }  
+            $sql = "SELECT * FROM Keskustelu";  
+            $result = $conn->query($sql);  
+
+            if ($result->num_rows > 0) {  
+            while($row = $result->fetch_assoc()) {  
+                echo "<br>".$row["nimi"]."</br><br>" . $row["viesti"]. "<br><br>";  
+            }
+        }
+
+$conn->close();  
+?>  
+<html>  
+    <body>  
+        <form action="handle.php" method="post">  
+            Nimimerkki: <input type="text" name="name"><br>  
+            Viesti: <textarea name="viesti"></textarea><br>  
+            <input type="submit">  
+        </form>  
+    </body>  
+</html>  
