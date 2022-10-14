@@ -552,3 +552,10 @@ $stmt->bind_param('ss', $name, $viesti);
 $stmt->execute();  
   
 $conn->close();   
+  
+-Tein uuden taulukon tietokantaan:  
+use peetu  
+create table anturidata(id int primary key auto_increment, liike int, aika datetime)  
+insert into anturidata (liike, aika) values (1, now())  
+insert into anturidata (liike, aika) values (0, now())  
+select * from anturidata  
