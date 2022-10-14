@@ -728,3 +728,9 @@ $conn->close();
         </form>  
     </body>  
 </html>  
+
+## 14.10.2022
+Sain aseteltua datan tietokannasta html taulukkoon  
+Sain tehtyä datasta google chartin  
+Siirsin koodit omiin external tiedostoihin  
+Laitoin READ.me kuntoon  
