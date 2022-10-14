@@ -635,20 +635,20 @@ $dbname ="Peetu";
 
 <?php  
 $con=mysqli_connect("hyvis.mysql.database.azure.com","db_projekti","Sivyh2022","Peetu");  
-// Check connection  
+  
 if (mysqli_connect_errno())  
 {  
 echo "Failed to connect to MySQL: " . mysqli_connect_error();  
 }  
-
+  
 $result = mysqli_query($con,"SELECT * FROM keskustelu");  
-
+  
 echo "<table border='1'>  
 <tr>  
 <th>nimimerkki</th>  
 <th>viesti</th>  
 </tr>";  
-
+  
 while($row = mysqli_fetch_array($result))  
 {  
 echo "<tr>";  
@@ -657,35 +657,35 @@ echo "<td>" . $row['viesti'] . "</td>";
 echo "</tr>";  
 }  
 echo "</table>";  
-
+  
 mysqli_close($con);  
 ?>  
-
+  
 ### handle.php
-
-<?php  
+  
+<?php   
 include "config.php";  
-
-$conn = new mysqli($servername, $username, $password, $dbname);  
-if ($conn->connect_error){  
-die("connection failed: " . $conn->connect_error);  
+  
+$conn = new mysqli($servername, $username, $password, $dbname);   
+if ($conn->connect_error){   
+die("connection failed: " . $conn->connect_error);   
 }  
-
+  
 $name = $_POST['name'];  
 $viesti = $_POST['viesti'];  
 $stmt = $conn->prepare('INSERT INTO Keskustelu (nimi, viesti) VALUES (?, ?)');  
 $stmt->bind_param('ss', $name, $viesti);  
-
+  
 $stmt->execute();  
-
-$conn->close();  
- 
+  
+$conn->close();   
+   
 header("location: index.php");  
 die();  
 ?>  
-
+  
 ### index.php  
-
+  
 <?php  
 include "database.php";  
 ?>  
@@ -698,25 +698,25 @@ include "database.php";
         </form>  
     </body>  
 </html>  
-
+  
 ### index2.php  
-
+  
 <?php  
 include "config.php";  
-
+  
             $conn = new mysqli($servername, $username, $password, $dbname);  
             if ($conn->connect_error) {  
                 die("connection failed: " . $conn->connect_error);  
             }  
             $sql = "SELECT * FROM Keskustelu";  
             $result = $conn->query($sql);  
-
+  
             if ($result->num_rows > 0) {  
             while($row = $result->fetch_assoc()) {  
                 echo "<br>".$row["nimi"]."</br><br>" . $row["viesti"]. "<br><br>";  
-            }
-        }
-
+            }  
+        }  
+  
 $conn->close();  
 ?>  
 <html>  
@@ -728,9 +728,52 @@ $conn->close();
         </form>  
     </body>  
 </html>  
-
+  
 ## 14.10.2022
 Sain aseteltua datan tietokannasta html taulukkoon  
 Sain tehtyä datasta google chartin  
 Siirsin koodit omiin external tiedostoihin  
 Laitoin READ.me kuntoon  
+
+### database.php
+  
+<?php  
+$con=mysqli_connect("hyvis.mysql.database.azure.com","db_projekti","Sivyh2022","Peetu");  
+  
+if (mysqli_connect_errno())  
+{  
+echo "Failed to connect to MySQL: " . mysqli_connect_error();  
+}  
+  
+$result = mysqli_query($con,"SELECT * FROM keskustelu");  
+  
+echo "<table border='1'>  
+<tr>  
+<th>nimimerkki</th>  
+<th>viesti</th>  
+</tr>";  
+  
+while($row = mysqli_fetch_array($result))  
+{  
+echo "<tr>";  
+echo "<td>" . $row['nimi'] . "</td>";  
+echo "<td>" . $row['viesti'] . "</td>";  
+echo "</tr>";  
+}  
+echo "</table>";  
+  
+mysqli_close($con);  
+?>  
+  
+-SQL-injektio on tekniikka tietoturva-aukkojen hyödyntämiseksi järjestelmiin tunkeutumisessa. Niitä esiintyy tietokantapohjaisissa sovelluksissa. Ne ovat varsin yleisiä WWW-pohjaisissa sovelluksissa joissa käyttäjät käyttävät tietokantaa WWW-rajapinnan yli, mutta SQL-injektiot eivät sinällään ole WWW-sidonnaisia.  
+-SQL-injektion voi estää simppelillä koodilla
+### Koodi SQL-injektion estämiseksi
+  
+$name = $_POST['name'];  
+$viesti = $_POST['viesti'];  
+$stmt = $conn->prepare('INSERT INTO Keskustelu (nimi, viesti) VALUES (?, ?)');  
+$stmt->bind_param('ss', $name, $viesti);  
+  
+$stmt->execute();  
+  
+$conn->close();   
