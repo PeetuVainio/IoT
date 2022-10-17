@@ -149,10 +149,10 @@ Tehtiin raspin localhost sivua:
                   <tr>  
                   <div>  
 <?php  
-            $servername ="localhost";  
+            $servername ="esimerkki_servername";  
             $username ="root";  
-            $password ="Jopee31v";  
-            $dbname ="SRYHMA_Peetu";  
+            $password ="esimerkki_Jopee31v";  
+            $dbname ="esimerkki_SRYHMA_Peetu";  
             
             $conn = new mysqli($servername, $username, $password, $dbname);  
             
@@ -308,10 +308,10 @@ index2.php
 
 <?php  
 
-$servername ="hyvis.mysql.database.azure.com";  
-$username ="db_projekti";  
-$password ="Sivuh2022";  
-$dbname ="Peetu";  
+$servername ="esimerkki_servername";  
+$username ="esimerkki_username";  
+$password ="esimerkki_salasana";  
+$dbname ="esimerkki_dbname";  
 
 ?>  
 
@@ -341,7 +341,7 @@ die("connection failed: " . $conn->connect_error);
 
 $name = $_POST['name'];  
 $viesti = $_POST['viesti'];  
-$sql = "INSERT INTO Keskustelu (nimi, viesti) VALUES ('".$name."', '".$viesti."')";  
+$sql = "INSERT INTO esimerkki (nimi, viesti) VALUES ('".$name."', '".$viesti."')";  
 
 
 if ($conn->query($sql) === TRUE) {  
@@ -366,7 +366,7 @@ include "index2.php";
             if ($conn->connect_error){  
             die("connection failed: " . $conn->connect_error);  
             }  
-            $sql = "SELECT * FROM Keskustelu";  
+            $sql = "SELECT * FROM esimerkki";  
             $result = $conn->query($sql);  
 
             if ($result->num_rows > 0) {}  
@@ -389,9 +389,9 @@ include "index2.php";
 -tein html sivua jossa käytin css  
 -laitettiin MySQL Workbenchiin uusi taulukko  
 tee tässä järjestyksessä:  
-Use peetu  
-create database keskustelu  
-create table keskustelu (id int primary key auto_increment. nimi varchar(255), viesti varchar(1000))  
+Use esimerkki  
+create database esimerkki  
+create table esimerkki (id int primary key auto_increment. nimi varchar(255), viesti varchar(1000))  
 ## 12.10.2022  
 sain tehtyä keskustelu lomakkeen loppuun  
 #### koodit
@@ -399,17 +399,17 @@ sain tehtyä keskustelu lomakkeen loppuun
 
 <?php  
 
-$servername ="hyvis.mysql.database.azure.com";  
-$username ="db_projekti";  
-$password ="Sivyh2022";  
-$dbname ="Peetu";  
+$servername ="esimerkki_servername";  
+$username ="esimerkki_username";  
+$password ="esimerkki_salasana";  
+$dbname ="esimerkki_dbname";  
 
 ?>  
 
 ### database.php  
 
 <?php  
-$con=mysqli_connect("hyvis.mysql.database.azure.com","db_projekti","Sivyh2022","Peetu");  
+$con=mysqli_connect("esimerkki_servername","esimerkki_username","esimerkki_salasana","esimerkki_dbname");  
   
 if (mysqli_connect_errno())  
 {  
@@ -448,7 +448,7 @@ die("connection failed: " . $conn->connect_error);
   
 $name = $_POST['name'];  
 $viesti = $_POST['viesti'];  
-$stmt = $conn->prepare('INSERT INTO Keskustelu (nimi, viesti) VALUES (?, ?)');  
+$stmt = $conn->prepare('INSERT INTO esimerkki (nimi, viesti) VALUES (?, ?)');  
 $stmt->bind_param('ss', $name, $viesti);  
   
 $stmt->execute();  
@@ -513,14 +513,14 @@ Laitoin READ.me kuntoon
 ### database.php
   
 <?php  
-$con=mysqli_connect("hyvis.mysql.database.azure.com","db_projekti","Sivyh2022","Peetu");  
+$con=mysqli_connect("esimerkki_servername","esimerkki_username","esimerkki_salasana","esimerkki_dbname");  
   
 if (mysqli_connect_errno())  
 {  
 echo "Failed to connect to MySQL: " . mysqli_connect_error();  
 }  
   
-$result = mysqli_query($con,"SELECT * FROM keskustelu");  
+$result = mysqli_query($con,"SELECT * FROM esimerkki");  
   
 echo "<table border='1'>  
 <tr>  
@@ -554,7 +554,7 @@ $stmt->execute();
 $conn->close();   
   
 -Tein uuden taulukon tietokantaan:  
-use peetu  
+use esimerkki  
 create table anturidata(id int primary key auto_increment, liike int, aika datetime)  
 insert into anturidata (liike, aika) values (1, now())  
 insert into anturidata (liike, aika) values (0, now())  
