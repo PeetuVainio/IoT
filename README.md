@@ -151,7 +151,7 @@ Tehtiin raspin localhost sivua:
 <?php  
             $servername ="esimerkki_servername";  
             $username ="root";  
-            $password ="esimerkki_Jopee31v";  
+            $password ="esimerkki_salasana";  
             $dbname ="esimerkki_SRYHMA_Peetu";  
             
             $conn = new mysqli($servername, $username, $password, $dbname);  
