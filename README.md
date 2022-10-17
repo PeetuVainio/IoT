@@ -559,3 +559,7 @@ create table anturidata(id int primary key auto_increment, liike int, aika datet
 insert into anturidata (liike, aika) values (1, now())  
 insert into anturidata (liike, aika) values (0, now())  
 select * from anturidata  
+
+## 17.10
+-siirsin projektin raspille  
+-laitoin vielä READmen kuntoon  
