@@ -11,11 +11,11 @@ from datetime import datetime
 """-------------------"""
 try:
     conn = mariadb.connect(
-        user="root",
-        password="Jopee31v",
-        host="localhost",
-        port=7,
-        database="SRYHMA"
+        user="",
+        password="",
+        host="",
+        port=,
+        database=""
 
     )
 except mariadb.Error as e:
