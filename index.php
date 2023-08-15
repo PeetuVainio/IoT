@@ -21,10 +21,10 @@
 			<tr>
 			<div>
 <?php
-		$servername ="localhost";
-		$username ="root";
-		$password ="Jopee31v";
-		$dbname ="SRYHMA_Luca";
+		$servername ="";
+		$username ="";
+		$password ="";
+		$dbname ="";
 		
 		$conn = new mysqli($servername, $username, $password, $dbname);
 		
