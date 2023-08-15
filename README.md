@@ -43,7 +43,7 @@ import time = nykyisen ajan saaminen, ohjelman suorittamisen keskeyttäminen imp
 
 GPIO.setmode(GPIO.BCM) =  
 GPIO.setup(23, GPIO.IN) =  
-conn = mariadb.connect(user="root", password="Jopee31v", host="localhost", database="SRYHMA") = kirjautuu valitsemaan tietokantaan cur = conn.cursor() =  
+conn = mariadb.connect(user="", password="", host="", database="") = kirjautuu valitsemaan tietokantaan cur = conn.cursor() =  
 
 try: = yrittää ensimmäiseksi tehdä tämän  
 while True: = kun on päällä  
@@ -60,7 +60,7 @@ conn.close() = sulkee kaikki odottavat tai lukemattomat tulokset
 GPIO.cleanup() = puhdista kaikki käyttämäsi portit  
 
 #### komennot, jolla saadaan salasana omaan tietokantaan  
-   SET PASSWORD FOR 'root'@localhost=PASSWORD("Jopee31v);  = laittaa salasanan tietokannalle
+   SET PASSWORD FOR ''@localhost=PASSWORD(");  = laittaa salasanan tietokannalle
    flush privileges; = tyhjentää tai lataa uudelleen erilaisia MariaDB:n käyttämiä sisäisiä välimuistia
 
 ### 22.9.2022
@@ -81,7 +81,7 @@ Loopissa ei kovakoodattua sisältöä, 3kpl esimerkkejä sql stringin muokkaamis
  GPIO.setmode(GPIO.SCM)  
  GPIO.setup(InputPin, GPIO.IN  
  
- conn = mariadb.connect(user="root", password="Jopee31v", host="localhost", database="SRYHMA")  
+ conn = mariadb.connect(user="", password="", host="", database="")  
  cur = conn.cursor()  
  waitloop = 5  
  print(datetime. datetime. now(1)  
