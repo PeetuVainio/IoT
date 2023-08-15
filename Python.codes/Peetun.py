@@ -5,7 +5,7 @@ import datetime
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(4, GPIO.IN)
-conn = mariadb.connect(user="root", password="Jopee31v", host="localhost", database="SRYHMA_Luca")
+conn = mariadb.connect(user="", password="", host="", database="")
 cur = conn.cursor()
 dt = datetime.datetime.now()
 try:
