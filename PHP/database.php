@@ -1,5 +1,5 @@
 <?php
-$con=mysqli_connect("hyvis.mysql.database.azure.com","db_projekti","Sivyh2022","Peetu");
+$con=mysqli_connect("","","","");
 // Check connection
 if (mysqli_connect_errno())
 {
